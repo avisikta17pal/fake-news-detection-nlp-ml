@@ -55,31 +55,57 @@ The project uses the **Fake and Real News Dataset** from Kaggle:
 
 ```
 fake-news-detection-nlp-ml/
-├── 📂 data/                    # Dataset files
-│   └── train.csv              # Training dataset
-├── 📂 notebooks/              # Jupyter notebooks
-│   ├── fake_news_detection.ipynb      # Main analysis notebook
-│   └── fake_news_detection_mlflow.ipynb  # MLflow-enabled notebook
-├── 📂 src/                    # Source code modules
-│   ├── data_loader.py         # Data loading utilities
-│   ├── preprocessing.py       # Text preprocessing functions
-│   ├── visualization.py       # Plotting and visualization
-│   ├── model.py              # ML model training and prediction
-│   └── evaluation.py         # Model evaluation utilities
-├── 📂 models/                 # Trained models
-│   ├── fake_news_model.pkl   # Saved Logistic Regression model
-│   └── tfidf_vectorizer.pkl  # Saved TF-IDF vectorizer
-├── 📂 outputs/                # Generated plots and reports
-│   ├── wordcloud_real.png    # Real news word cloud
-│   ├── wordcloud_fake.png    # Fake news word cloud
-│   ├── confusion_matrix.png  # Model confusion matrix
-│   ├── roc_curve.png        # ROC curve
-│   └── evaluation_report.txt # Detailed evaluation report
-├── 📂 mlruns/                 # MLflow experiment tracking
-│   └── ...                   # Experiment runs and artifacts
-├── 📄 README.md              # Project documentation
-├── 📄 requirements.txt       # Python dependencies
-└── 📄 .gitignore            # Git ignore file
+│
+├── api/                          # 🚀 FastAPI app for serving model predictions
+│   └── app.py                    # Main API application
+│
+├── data/                         # 📦 Raw and preprocessed datasets
+│   ├── Fake.csv                  # Raw fake news dataset
+│   ├── True.csv                  # Raw real news dataset
+│   └── train.csv                 # Merged/cleaned dataset for training
+│
+├── mlruns/                       # 📈 MLflow experiment tracking logs
+│   └── ...                       # (auto-generated run metadata and artifacts)
+│
+├── models/                       # 🧠 Serialized model artifacts
+│   └── model.pkl                 # Trained ML model (Logistic / Random Forest)
+│
+├── notebooks/                    # 📓 Jupyter notebooks for exploration
+│   ├── fake_news_detection.ipynb           # Initial development notebook
+│   ├── fake_news_detection_mlflow.ipynb    # MLflow-integrated version
+│   └── fake_news_detection_mlflow.py       # Script version of the above
+│
+├── src/                          # 🧱 Core logic (preprocessing, modeling, etc.)
+│   ├── __init__.py
+│   ├── advanced_models.py        # (Optional) Transformers or future DL
+│   ├── data_loader.py            # Data loading and dataset splits
+│   ├── evaluation.py             # Evaluation metrics and plots
+│   ├── experiment_tracker.py     # MLflow integration functions
+│   ├── mlops.py                  # CI/CD or MLOps utilities (optional)
+│   ├── model.py                  # Model training and prediction pipeline
+│   ├── preprocessing.py          # Text preprocessing and feature engineering
+│   └── visualization.py          # Visualizations (wordclouds, heatmaps, etc.)
+│
+├── tests/                        # 🧪 Unit tests
+│   └── test_fake_news_detection.py
+│
+├── utils/                        # 🔧 Utility scripts
+│   └── merge_datasets.py         # Merges Fake.csv and True.csv into train.csv
+│
+├── .github/                      # ⚙️ GitHub Actions workflows
+│   └── workflows/
+│       └── ci-cd.yml             # CI/CD pipeline (optional)
+│
+├── .gitignore                    # Exclude unnecessary files from Git
+├── .gitattributes                # Git LFS tracking for large CSVs
+├── Dockerfile                    # 🐳 Container definition
+├── main.py                       # Optional script entry point
+├── README.md                     # 📘 Project overview and instructions
+├── requirements.txt              # 📦 Python dependencies
+├── run_api.py                    # 🏁 Starts the FastAPI app (Uvicorn runner)
+├── PROJECT_EVALUATION.md         # 🔍 Project evaluation report
+├── PROJECT_SUMMARY.md            # 📄 Summary and highlights
+└── structure.txt                 # (Optional) Text version of the structure
 ```
 
 ## 🚀 How to Run
