@@ -266,9 +266,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 👨‍💻 Author
 
 **Avisikta Pal**
-- 📧 Email: [avisiktapalofficial2006@gmail.com]
-- 🔗 LinkedIn: [linkedin.com/in/avisikta-pal-b5964234b]
-- 🐙 GitHub: [github.com/avisikta17pal]
+📧 Email: [avisiktapalofficial2006@gmail.com](mailto:avisiktapalofficial2006@gmail.com)  
+🔗 LinkedIn: [linkedin.com/in/avisikta-pal-b5964234b](https://www.linkedin.com/in/avisikta-pal-b5964234b)  
+🐙 GitHub: [github.com/avisikta17pal](https://github.com/avisikta17pal)  
 - 🌐 Portfolio: Coming Soon
 
 
