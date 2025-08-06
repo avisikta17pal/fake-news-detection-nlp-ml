@@ -239,11 +239,13 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👨‍💻 Author
 
-**Your Name**
-- 📧 Email: [your.email@example.com]
-- 🔗 LinkedIn: [Your LinkedIn Profile]
-- 🐙 GitHub: [Your GitHub Profile]
-- 🌐 Portfolio: [Your Portfolio Website]
+**Avisikta Pal**
+- 📧 Email: [avisiktapalofficial2006@gmail.com]
+- 🔗 LinkedIn: [linkedin.com/in/avisikta-pal-b5964234b]
+- 🐙 GitHub: [github.com/avisikta17pal]
+- 🌐 Portfolio: Coming Soon
+
+
 
 ## 🙏 Acknowledgments
 
@@ -298,6 +300,20 @@ This will start the MLflow tracking server at http://localhost:5000 where you ca
     ```bash
     curl -X POST "http://localhost:8000/predict" -H "Content-Type: application/json" -d '{"text": "Some news content here..."}'
     ```
+### 🔍 Example Input
+```json
+{
+  "text": "NASA confirms water found on the moon's sunlit surface."
+}
+```
+### 🔍 Example Output
+```json
+{
+ "prediction": "real",
+  "confidence": 0.91
+}
+```
+
 
 ### Docker
 
