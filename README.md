@@ -281,10 +281,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📊 Project Statistics
 
-![GitHub stars](https://img.shields.io/github/stars/yourusername/fake-news-detection-nlp-ml)
-![GitHub forks](https://img.shields.io/github/forks/yourusername/fake-news-detection-nlp-ml)
-![GitHub issues](https://img.shields.io/github/issues/yourusername/fake-news-detection-nlp-ml)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/yourusername/fake-news-detection-nlp-ml)
+![GitHub stars](https://img.shields.io/github/stars/avisikta17pal/fake-news-detection-nlp-ml)
+![GitHub forks](https://img.shields.io/github/forks/avisikta17pal/fake-news-detection-nlp-ml)
+![GitHub issues](https://img.shields.io/github/issues/avisikta17pal/fake-news-detection-nlp-ml)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/avisikta17pal/fake-news-detection-nlp-ml)
 
 ---
 
