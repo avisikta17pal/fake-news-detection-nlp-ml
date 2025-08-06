@@ -33,22 +33,23 @@ The project uses the **Fake and Real News Dataset** from Kaggle:
 
 ### Core ML Libraries
 - **scikit-learn**: Machine learning algorithms and utilities
-- **pandas**: Data manipulation and analysis
-- **numpy**: Numerical computing
-
-### NLP Libraries
-- **NLTK**: Natural Language Processing toolkit
-- **TF-IDF**: Text feature extraction
-
-### Visualization Libraries
-- **matplotlib**: Basic plotting
-- **seaborn**: Statistical data visualization
-- **wordcloud**: Word cloud generation
-
-### Utility Libraries
-- **joblib**: Model persistence
-- **re**: Regular expressions for text cleaning
+- **pandas** & **numpy**: Data manipulation and numerical computing
 - **mlflow**: Experiment tracking and model management
+
+### NLP & Text Analysis
+- **spaCy**: POS tagging, NER, and lemmatization
+- **TextBlob** & **VADER**: Sentiment analysis
+- **textstat**: Readability scoring
+- **TF-IDF (scikit-learn)**: Feature extraction from text
+
+### Visualization
+- **matplotlib** & **seaborn**: Data visualization
+- **wordcloud**: Visualizing top frequent words
+
+### Utilities
+- **joblib**: Model persistence
+- **re**: Regex-based text cleaning
+
 
 ## 📁 Project Structure
 
@@ -152,6 +153,18 @@ mlflow ui
 - The model shows excellent performance in distinguishing between real and fake news
 - TF-IDF features effectively capture the linguistic patterns that differentiate news types
 - Logistic Regression provides good interpretability while maintaining high accuracy
+
+## 🧠 Advanced Features
+
+This project goes beyond classic text classification by integrating:
+
+- **Linguistic Preprocessing**: Lemmatization, POS tagging, Named Entity Recognition (NER) using `spaCy`
+- **Sentiment Analysis**: Dual sentiment scoring with `TextBlob` and `VADER`
+- **Readability Metrics**: Flesch Reading Ease, Gunning Fog Index, etc. using `textstat`
+- **Feature Fusion**: Engineered features + TF-IDF vectors combined to improve model performance
+- **Multiple Classifiers**: Logistic Regression and Random Forest evaluated via MLflow
+
+These enhancements improve both accuracy and interpretability of predictions.
 
 ## 🖼️ Visualizations
 
@@ -275,7 +288,7 @@ This will start the MLflow tracking server at http://localhost:5000 where you ca
    ```
 2. Start the API server:
    ```bash
-   python run_api.py
+   python api/app.py
    ```
 3. The API will be live at [http://localhost:8000](http://localhost:8000)
 
